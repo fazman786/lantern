@@ -1,4 +1,4 @@
-import { CATS, COUNTRY_CONFIG, getCountryConfig, FREE_LIMIT, MODEL } from './config.js';
+import { CATS, getCountryConfig, FREE_LIMIT, MODEL } from './config.js';
 
 
 /* ═══════════════════════════════════════════════════════
