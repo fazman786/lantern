@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Lantern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #070C16;
+      --surf:    #0D1422;
+      --border:  #1A2840;
+      --accent:  #E9A84C;
+      --text:    #EDE8DF;
+      --text2:   #7B8FA8;
+      --text3:   #3A4E64;
+      --serif:   'Cormorant Garamond', Georgia, serif;
+      --sans:    'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.75;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      background: var(--surf);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .logo-text {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--accent);
+      letter-spacing: 2px;
+    }
+
+    .back-arrow {
+      font-size: 20px;
+      color: var(--text2);
+      margin-right: 4px;
+    }
+
+    /* ── Main content ── */
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .page-title {
+      font-family: var(--serif);
+      font-size: clamp(32px, 6vw, 48px);
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .updated {
+      font-size: 13px;
+      color: var(--text3);
+      margin-bottom: 40px;
+    }
+
+    /* ── Intro card ── */
+    .intro-card {
+      background: var(--surf);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: var(--text2);
+      line-height: 1.8;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--text2);
+      margin-bottom: 14px;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 14px;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: var(--text2);
+      padding: 6px 0 6px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "›";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-size: 16px;
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background: rgba(233,168,76,0.08);
+      border: 1px solid rgba(233,168,76,0.25);
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-size: 14px;
+      color: var(--text2);
+      margin-bottom: 14px;
+    }
+
+    /* ── Contact card ── */
+    .contact-card {
+      background: var(--surf);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .contact-card p {
+      margin-bottom: 6px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: var(--text3);
+    }
+
+    /* ── Lantern icon (inline SVG) ── */
+    .lantern-icon {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="/">
+      <span class="back-arrow">←</span>
+      <svg class="lantern-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 6 L24 12" stroke="#E9A84C" stroke-width="1.8" stroke-linecap="round"/>
+        <path d="M21 8.5 C21 7 22 6 24 6 C26 6 27 7 27 8.5" stroke="#E9A84C" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <path d="M17 14 Q24 11 31 14" stroke="#E9A84C" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <rect x="15" y="14" width="18" height="22" rx="3" fill="rgba(233,168,76,0.07)" stroke="#E9A84C" stroke-width="1.4"/>
+        <ellipse cx="24" cy="26" rx="4.5" ry="6" fill="rgba(233,168,76,0.45)"/>
+        <ellipse cx="24" cy="24.5" rx="2.8" ry="4" fill="rgba(255,220,140,0.75)"/>
+        <ellipse cx="24" cy="23" rx="1.4" ry="2.2" fill="rgba(255,250,230,0.92)"/>
+        <path d="M17 36 Q24 39 31 36" stroke="#E9A84C" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.6"/>
+      </svg>
+      <span class="logo-text">Lantern</span>
+    </a>
+  </header>
+
+  <main>
+    <h1 class="page-title">Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <div class="intro-card">
+      Lantern is built to help people in stressful situations get clear guidance. We take your privacy seriously. This policy explains exactly what we collect, why, and what we never do with your information.
+    </div>
+
+    <section>
+      <h2>1. Who We Are</h2>
+      <p>Lantern is an AI-powered guidance app that helps users understand legal, financial, employment, and housing situations. The app is operated by the Lantern team and is accessible at <strong>lantern-ebon.vercel.app</strong> and via the Lantern mobile app.</p>
+      <p>For any privacy matters, contact us at: <a href="mailto:privacy@lanternapp.co">privacy@lanternapp.co</a></p>
+    </section>
+
+    <section>
+      <h2>2. What We Collect</h2>
+      <p>We collect the minimum necessary to provide the service.</p>
+      <ul>
+        <li><strong>Situation descriptions</strong> — the text, voice transcriptions, or documents you submit to receive guidance. These are sent to Anthropic's Claude AI to generate your response.</li>
+        <li><strong>Device fingerprint</strong> — a anonymised identifier generated from publicly available browser signals (screen size, timezone, language, hardware concurrency). This is used only to enforce the monthly free usage limit. It is never linked to your identity.</li>
+        <li><strong>Usage count</strong> — how many guidance sessions you have used in the current month, stored locally on your device.</li>
+        <li><strong>Country preference</strong> — the country you select, stored locally on your device to tailor guidance to your jurisdiction.</li>
+        <li><strong>Saved history</strong> — guidance sessions you choose to save, stored locally on your device only.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. What We Do Not Collect</h2>
+      <div class="highlight">
+        We do not collect your name, email address, phone number, or any account credentials. We do not require you to create an account to use Lantern.
+      </div>
+      <ul>
+        <li>We do not collect precise location data</li>
+        <li>We do not track you across other apps or websites</li>
+        <li>We do not sell your data to any third party</li>
+        <li>We do not use your data for advertising</li>
+        <li>We do not store your situation descriptions on our servers after your guidance is returned</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. How Your Data Is Used</h2>
+      <p>The text or documents you submit are sent to <strong>Anthropic</strong> (the makers of Claude AI) solely to generate your guidance response. This transmission is encrypted. Anthropic's own privacy policy governs how they handle API data — you can read it at <a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a>.</p>
+      <p>Your device fingerprint is used only to count monthly usage sessions and prevent abuse of the free tier. It is a one-way hash — it cannot be reversed to identify you or your device.</p>
+      <p>All other data (saved history, country preference, usage count) is stored exclusively on your own device and is never transmitted to us.</p>
+    </section>
+
+    <section>
+      <h2>5. Voice Input</h2>
+      <p>If you use the voice input feature, your speech is processed locally by your device's built-in speech recognition (provided by your operating system or browser). Lantern does not record, transmit, or store audio. Only the transcribed text is used.</p>
+    </section>
+
+    <section>
+      <h2>6. Document Upload</h2>
+      <p>If you upload a document or photo, it is converted to a format suitable for AI analysis and sent to Anthropic's API to generate your guidance. The document is not stored on our servers. It is transmitted securely over HTTPS and used only for your current session.</p>
+    </section>
+
+    <section>
+      <h2>7. Children's Privacy</h2>
+      <p>Lantern is intended for users aged 18 and over. We do not knowingly collect data from anyone under 18. If you believe a minor has used the service and submitted personal information, please contact us and we will take appropriate action.</p>
+    </section>
+
+    <section>
+      <h2>8. Data Retention</h2>
+      <ul>
+        <li><strong>Situation descriptions</strong> — not retained by us after your guidance is returned</li>
+        <li><strong>Device fingerprint</strong> — stored in your browser's local storage; cleared when you clear your browser data</li>
+        <li><strong>Saved history</strong> — stored on your device; you can delete it at any time from the Settings tab</li>
+        <li><strong>Usage count</strong> — resets automatically at the start of each calendar month</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>9. Your Rights</h2>
+      <p>Because we do not collect personally identifiable information and all data is stored on your own device, most traditional data rights (access, erasure, portability) are exercised directly by you through your device settings.</p>
+      <p>You can delete all saved data from the Lantern app at any time via <strong>Settings → Clear all history</strong>.</p>
+      <p>If you have questions about data processed through Anthropic's API, you may contact Anthropic directly or contact us and we will assist.</p>
+    </section>
+
+    <section>
+      <h2>10. Security</h2>
+      <p>All data transmitted between the Lantern app and Anthropic's API is encrypted using HTTPS/TLS. We do not operate servers that store your personal data, which significantly reduces the risk of data breaches.</p>
+    </section>
+
+    <section>
+      <h2>11. Third-Party Services</h2>
+      <ul>
+        <li><strong>Anthropic Claude API</strong> — processes your situation descriptions to generate guidance. <a href="https://www.anthropic.com/privacy" target="_blank">Privacy policy</a></li>
+        <li><strong>Vercel</strong> — hosts the Lantern web application. <a href="https://vercel.com/legal/privacy-policy" target="_blank">Privacy policy</a></li>
+        <li><strong>Google Fonts</strong> — serves fonts used in the app interface. <a href="https://policies.google.com/privacy" target="_blank">Privacy policy</a></li>
+        <li><strong>OpenStreetMap Nominatim</strong> — used optionally for country detection via geolocation if you grant location permission. No data is stored. <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank">Privacy policy</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>12. Important Disclaimer</h2>
+      <div class="highlight">
+        Lantern provides educational guidance only. Nothing in this app constitutes legal, financial, tax, or professional advice. Always consult a qualified professional for your specific situation. Lantern is not a law firm and does not create a solicitor-client or adviser-client relationship.
+      </div>
+    </section>
+
+    <section>
+      <h2>13. Changes to This Policy</h2>
+      <p>We may update this privacy policy from time to time. The date at the top of this page will reflect the most recent update. Continued use of Lantern after changes are posted constitutes acceptance of the updated policy.</p>
+    </section>
+
+    <section>
+      <h2>14. Contact Us</h2>
+      <div class="contact-card">
+        <p>For any privacy questions or concerns:</p>
+        <p><strong><a href="mailto:privacy@lanternapp.co">privacy@lanternapp.co</a></strong></p>
+        <p style="margin-top:12px; font-size:13px; color: var(--text3);">We aim to respond within 5 business days.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Lantern · <a href="/">Back to app</a></p>
+  </footer>
+
+</body>
+</html>
