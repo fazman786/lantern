@@ -1,7 +1,6 @@
 {
-  "name": "lantern",
+  "name": "waythrough",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,8 +13,5 @@
   "devDependencies": {
     "vite": "^5.0.0",
     "@vitejs/plugin-react": "^4.0.0"
-  },
-  "engines": {
-    "node": ">=18"
   }
 }
