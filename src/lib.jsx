@@ -484,15 +484,21 @@ export const FREE_LIMIT = 3;
 export const MODEL = "claude-sonnet-4-20250514";
 
 /* ═══════════════════════════════════════════════════════
-   STORAGE HELPERS
+   STORAGE HELPERS  (localStorage)
 ═══════════════════════════════════════════════════════ */
 export const S = {
   async get(k) {
-    try { const r = await window.storage.get(k); return r ? JSON.parse(r.value) : null; }
-    catch { return null; }
+    try {
+      const val = localStorage.getItem(k);
+      return val ? JSON.parse(val) : null;
+    } catch { return null; }
   },
-  async set(k, v) { try { await window.storage.set(k, JSON.stringify(v)); } catch {} },
-  async del(k)    { try { await window.storage.delete(k); }               catch {} },
+  async set(k, v) {
+    try { localStorage.setItem(k, JSON.stringify(v)); } catch {}
+  },
+  async del(k) {
+    try { localStorage.removeItem(k); } catch {}
+  },
 };
 
 export const monthKey = () => { const d = new Date(); return `${d.getFullYear()}-${d.getMonth()}`; };
