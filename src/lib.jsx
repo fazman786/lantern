@@ -481,7 +481,7 @@ export async function detectCountry() {
 }
 
 export const FREE_LIMIT = 3;
-export const MODEL = "claude-sonnet-4-20250514";
+export const MODEL = "claude-sonnet-4-6";
 
 /* ═══════════════════════════════════════════════════════
    STORAGE HELPERS  (localStorage)
