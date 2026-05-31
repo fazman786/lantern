@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Waythrough</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#E9A84C" />
+    <meta name="description" content="Clear, calm guidance for debt, legal, housing and employment situations. Works in 37 countries." />
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3245990202909798" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
   </body>
 </html>
