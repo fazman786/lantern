@@ -525,11 +525,10 @@ export async function getGuidance(catId, situation, imageData, imageType, countr
       ]
     : [{ type: "text", text: situation }];
 
-  const res = await fetch("https://fudjdjdojqvkqvfjmgmx.supabase.co/functions/v1/chat", {
+  const res = await fetch("/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer sb_publishable_Hl0Va5jMmNii7MdHcmbcGA_0yHfQbYB",
     },
     body: JSON.stringify({
       model: MODEL,
@@ -577,11 +576,10 @@ export async function getFollowUp(catId, situation, result, chatHistory, userMes
     { role: "user", content: userMessage },
   ];
 
-  const res = await fetch("https://fudjdjdojqvkqvfjmgmx.supabase.co/functions/v1/chat", {
+  const res = await fetch("/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Authorization": "Bearer sb_publishable_Hl0Va5jMmNii7MdHcmbcGA_0yHfQbYB",
     },
     body: JSON.stringify({
       model: MODEL,
