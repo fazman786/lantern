@@ -1,7 +1,7 @@
 {
   "name": "Waythrough — Legal & Financial Guidance",
   "short_name": "Waythrough",
-  "description": "Clear, calm guidance for overwhelming legal, financial, and employment situations. Works in 37 countries.",
+  "description": "Clear, calm guidance for debt, legal, housing and employment situations. Works in 37 countries.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
@@ -41,7 +41,7 @@
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-192.png",
+      "src": "/icons/icon-192-1.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
@@ -53,41 +53,11 @@
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/icons/icon-512-1.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
     }
   ],
-  "shortcuts": [
-    {
-      "name": "Scan a document",
-      "short_name": "Scan",
-      "description": "Photograph a letter for instant guidance",
-      "url": "/?action=scan",
-      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
-    },
-    {
-      "name": "Debt & Bills",
-      "short_name": "Debt",
-      "description": "Get guidance on debt situations",
-      "url": "/?cat=debt",
-      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
-    },
-    {
-      "name": "Employment",
-      "short_name": "Employment",
-      "description": "Get guidance on employment situations",
-      "url": "/?cat=employment",
-      "icons": [{ "src": "/icons/icon-96.png", "sizes": "96x96" }]
-    }
-  ],
-  "prefer_related_applications": false,
-  "related_applications": [
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=co.waythroughapp.app",
-      "id": "co.waythroughapp.app"
-    }
-  ]
+  "prefer_related_applications": false
 }
