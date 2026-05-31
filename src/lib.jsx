@@ -531,10 +531,11 @@ export async function getGuidance(catId, situation, imageData, imageType, countr
       ]
     : [{ type: "text", text: situation }];
 
-  const res = await fetch("/api/chat", {
+  const res = await fetch("https://fudjdjdojqvkqvfjmgmx.supabase.co/functions/v1/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ1ZGpkamRvanF2a3F2ZmptZ214Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMTExMDIsImV4cCI6MjA5NTc4NzEwMn0.K_-f9a-iLtFV3iiUUXpdPD6LcATw2qXZ5QLghPpWfHs",
     },
     body: JSON.stringify({
       model: MODEL,
@@ -582,10 +583,11 @@ export async function getFollowUp(catId, situation, result, chatHistory, userMes
     { role: "user", content: userMessage },
   ];
 
-  const res = await fetch("/api/chat", {
+  const res = await fetch("https://fudjdjdojqvkqvfjmgmx.supabase.co/functions/v1/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ1ZGpkamRvanF2a3F2ZmptZ214Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODAyMTExMDIsImV4cCI6MjA5NTc4NzEwMn0.K_-f9a-iLtFV3iiUUXpdPD6LcATw2qXZ5QLghPpWfHs",
     },
     body: JSON.stringify({
       model: MODEL,
