@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "co.waythroughapp.app",
+      "sha256_cert_fingerprints": [
+        "89:FE:A3:3C:5C:3F:B2:65:88:DF:94:6C:AD:18:1A:43:0E:F3:B1:49:CF:DE:C7:4E:A8:DE:10:A1:F6:68:8F:41"
+      ]
+    }
+  }
+]
