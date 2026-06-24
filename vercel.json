@@ -1,8 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/app", "destination": "/index.html" },
-    { "source": "/app/(.*)", "destination": "/index.html" },
-    { "source": "/", "destination": "/landing.html" },
-    { "source": "/((?!api|app|landing|privacy|terms|ads|icons|manifest|sw).*)", "destination": "/index.html" }
-  ]
+  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }]
 }
