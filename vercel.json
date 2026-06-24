@@ -1,21 +1,8 @@
 {
-  "headers": [
-    {
-      "source": "/.well-known/assetlinks.json",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        },
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        }
-      ]
-    }
-  ],
   "rewrites": [
-    { "source": "/api/chat", "destination": "/api/chat" },
-    { "source": "/((?!api/|.well-known/).*)", "destination": "/index.html" }
+    { "source": "/app", "destination": "/index.html" },
+    { "source": "/app/(.*)", "destination": "/index.html" },
+    { "source": "/", "destination": "/landing.html" },
+    { "source": "/((?!api|app|landing|privacy|terms|ads|icons|manifest|sw).*)", "destination": "/index.html" }
   ]
 }
